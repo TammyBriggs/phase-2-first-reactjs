@@ -1,22 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  let click = () => {
+    alert('You clicked this button');
+  };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src = "https://images.unsplash.com/photo-1618056210931-39f730ebbf67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" 
+        className="App-image" 
+        alt="An Audi Car"
+        style={{ width: '600px', height: '400px' }} />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My new shiny black Audi RS 6
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <button onClick={click}>Click me</button>
       </header>
     </div>
   );
